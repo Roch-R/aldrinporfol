@@ -437,6 +437,41 @@ footer p {
     }
 }
 
+/* Micro Screens (e.g. 133px) */
+@media (max-width: 150px) {
+    :root {
+        font-size: 11px;
+    }
+
+    header {
+        padding: 20px 4px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .about-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .profile-img {
+        border-width: 4px;
+    }
+
+    form {
+        padding: 15px 5px;
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 75px) {
     body {
         width: 75px;
