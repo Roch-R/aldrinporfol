@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <title>My Portfolio | BSIT-1B</title>
 </head>
 
 <body>
@@ -17,53 +20,89 @@
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main Navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me:</h2>
-        <p>
-            The BSIT-1B is master in programming such all the languages.
-            They enjoy eating codes and master in creating Web systems.
-        </p>
-    </section>
+    <main>
+        <!-- About -->
+        <section id="about">
+            <div class="about-content">
+                <img src="img.jpg" alt="Profile Picture" class="profile-img">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a passionate BSIT-1B student with a strong foundation in various
+                        programming languages. I enjoy writing code, solving problems, and
+                        creating robust web systems.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Master in HTML</li>
-            <li>Master in CSS</li>
-            <li>Master Javascript</li>
-            <li>Master of all Programming</li>
-        </ul>
-    </section>
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Master in HTML</li>
+                <li>Master in CSS</li>
+                <li>Master Javascript</li>
+                <li>Master of all Programming</li>
+            </ul>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Personal Portfolio</h3>
+                    <p>A clean, responsive personal portfolio built with modern HTML and CSS to showcase my web development
+                        skills.</p>
+                </div>
+                <div class="project">
+                    <h3>Web System</h3>
+                    <p>A comprehensive web system project demonstrating backend logic and frontend design integration.</p>
+                </div>
+                <div class="project">
+                    <h3>E-commerce Design</h3>
+                    <p>A responsive online store interface featuring product listings and a clean, modern user experience.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section id="contact">
+            <form aria-label="Contact Form">
+                <h2>Contact Me</h2>
+                <p class="form-subtitle">Have a question or want to work together? Send me a message!</p>
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
 
-    <section id="contact">
-        <h2>Contact Me:</h2>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>@ 2026 Web Portfolio | All Rights Reserved</p>
+        <p>&copy; 2026 Web Portfolio | All Rights Reserved</p>
     </footer>
 
 </body>
