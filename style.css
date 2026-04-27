@@ -126,14 +126,16 @@ section h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .profile-img {
     width: 320px;
-    height: 380px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
     object-fit: cover;
     object-position: top;
     border-radius: 32px;
@@ -145,7 +147,7 @@ section h2 {
 
 .about-text {
     flex: 1;
-    min-width: 340px;
+    min-width: 280px;
     text-align: left;
 }
 
@@ -169,8 +171,8 @@ section h2 {
 /* -------------------------------------------------------------------------- */
 #skills ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
     list-style: none;
     padding: 0;
 }
@@ -198,7 +200,7 @@ section h2 {
 /* -------------------------------------------------------------------------- */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
 
@@ -357,16 +359,21 @@ footer p {
     }
 
     .about-content {
+        gap: 30px;
         text-align: center;
     }
 
     .about-text {
-        text-align: left;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .about-text h2 {
+        text-align: center;
     }
 
     .profile-img {
-        width: 240px;
-        height: 280px;
+        width: 280px;
     }
 }
 
@@ -377,17 +384,22 @@ footer p {
     }
 
     nav a {
-        padding: 8px 12px;
-        font-size: 0.85rem;
+        padding: 8px 10px;
+        font-size: 0.8rem;
     }
 
     section h2 {
         font-size: 1.75rem;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    .profile-img {
+        width: 100%;
+        max-width: 300px;
     }
 
     form {
-        padding: 24px;
+        padding: 30px 20px;
     }
 }
 
