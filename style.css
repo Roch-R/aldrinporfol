@@ -486,51 +486,61 @@ footer p {
 
 @media (max-width: 75px) {
     :root {
-        font-size: 8px;
+        font-size: 2vw;
     }
 
     body, html {
         width: 100%;
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     * {
         max-width: 100% !important;
         overflow-wrap: break-word !important;
         word-break: break-all !important;
+        box-sizing: border-box !important;
     }
 
     header,
     section,
     footer,
-    nav {
-        padding: 4px 1px !important;
+    nav,
+    form {
+        padding: 2px 0 !important;
+        margin: 0 !important;
     }
 
-    h1,
-    h2,
-    h3 {
-        font-size: 10px !important;
-        margin-bottom: 4px !important;
+    h1, h2, h3 {
+        font-size: 15vw !important;
+        line-height: 1.1 !important;
+        margin: 2px 0 !important;
+    }
+
+    p, li, a, label, input, textarea, button {
+        font-size: 12vw !important;
+        line-height: 1.2 !important;
     }
 
     nav a {
-        font-size: 7px !important;
-        padding: 2px 1px !important;
         width: 100% !important;
+        padding: 1px 0 !important;
+        border: none !important;
+    }
+
+    .profile-img {
+        width: 100% !important;
+        margin: 0 !important;
+        border-width: 1px !important;
     }
 
     form {
-        padding: 4px 1px !important;
-        gap: 8px !important;
-    }
-
-    .form-group label {
-        font-size: 7px !important;
+        gap: 2px !important;
     }
 
     input, textarea, button {
-        padding: 4px !important;
-        font-size: 7px !important;
+        padding: 1px !important;
+        border-radius: 2px !important;
     }
 }
