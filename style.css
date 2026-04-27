@@ -401,38 +401,46 @@ footer p {
     form {
         padding: 30px 20px;
     }
+
+    #skills ul, 
+    .projects-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
 }
 
 /* Extremely Small Screens (Legacy Support) */
-@media (max-width: 200px) {
+@media (max-width: 250px) {
     :root {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    nav {
-        flex-wrap: wrap;
+    header {
+        padding: 40px 10px;
     }
 
     nav a {
-        width: 50%;
-        text-align: center;
-        padding: 4px;
+        padding: 6px 8px;
+        font-size: 0.75rem;
     }
 
-    .profile-img {
-        width: 100%;
-        height: auto;
+    section {
+        padding: 40px 0;
     }
 
     .project {
-        padding: 20px;
+        padding: 24px;
+    }
+
+    form {
+        padding: 20px 15px;
     }
 }
 
 @media (max-width: 75px) {
     body {
         width: 75px;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     * {
@@ -449,7 +457,7 @@ footer p {
     h1,
     h2,
     h3 {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     nav a {
